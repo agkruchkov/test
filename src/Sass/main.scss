@@ -1,0 +1,225 @@
+body {
+  margin: 100px;
+}
+
+@media screen and (min-width: 1401px) {
+  html {
+    font-size: 13px !important;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  html {
+    font-size: 10px !important;
+  }
+  .location-top-header {
+    margin-left: 10px !important;
+  }
+}
+
+html {
+  font-size: calc((100vw - 800px) / (1400 - 800) * (13 - 10) + 10px);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: white;
+  font-family: "OpenSansRegular", "Arial", sans-serif;
+  color: black;
+}
+
+li {
+  list-style: none;
+}
+
+h2 {
+  font-weight: normal;
+}
+
+.error {
+  position: absolute;
+  top: 192px;
+  left: 120px;
+  color: red;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.btn {
+  padding: 5px 10px;
+  margin: 10px;
+}
+
+.container {
+  max-width: 1400px;
+  min-width: 800px;
+  margin: 0 auto;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.header-site {
+  background-color: white;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: end;
+  font-size: 12px;
+  color: black;
+  .menu-header {
+    margin: calc(12 * 100% / 1400) 0;
+    width: calc(700 * 100% / 1400);
+    ul {
+      display: flex;
+      justify-content: flex-end;
+      margin: 0;
+      padding: 0;
+      li {
+        padding: 0 15px;
+        white-space: nowrap;
+        align-items: normal;
+        a {
+          color: black;
+          text-decoration: none;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+
+.middle-site {
+  .middle-home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .middle-news {
+    display: flex;
+    justify-content: space-between;
+    .news-column-search-and-add {
+      width: 300px;
+      margin-left: 20px;
+      .middle-news-search {
+        width: 300px;
+        label {
+          input {
+            margin-left: 20px;
+            padding: 2px;
+            width: 230px;
+          }
+        }
+      }
+      .add-news-form {
+        .form-common {
+          display: flex;
+          justify-content: space-between;
+          width: 300px;
+          margin-bottom: 10px;
+          label {
+            padding-top: 5px;
+          }
+          .text-input {
+            width: 200px;
+            padding: 2px;
+            margin: 0 10px;
+          }
+          .text-textarea {
+            width: 200px;
+            height: 300px;
+            padding: 2px;
+            margin: 0 5px;
+          }
+        }
+      }
+      .btn {
+        width: 136px;
+        margin-left: calc((300px - 136px) / 2);
+      }
+    }
+
+    .news-list {
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      width: 100%;
+      margin: 0;
+      li {
+        width: 300px;
+        margin: 0 10px;
+        .news-title-and-date {
+          height: 150px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          .news-title {
+            height: 70px;
+            margin-top: 30px;
+          }
+          .news-not-approved {
+            color: red;
+          }
+          .instruments-of-admin {
+            display: flex;
+            justify-content: flex-start;
+            .button-delete-news {
+              border: 1px solid #0075ff;
+              background-color: #0075ff;
+              padding: 0 4px 0 3px;
+              color: white;
+              cursor: pointer;
+              line-height: 9px;
+              margin-top: 3px;
+              height: 11px;
+              border-radius: 20%;
+              font-weight: bold;
+            }
+          }
+          .news-date {
+            border-bottom: 1px solid grey;
+          }
+        }
+        .news-content {
+          margin-top: 5px;
+        }
+      }
+    }
+  }
+}
+
+.common-form {
+  display: flex;
+  justify-content: space-between;
+  label {
+    margin: 5px;
+    padding-top: 6px;
+    width: 50px;
+  }
+  input {
+    margin: 5px;
+    padding: 3px;
+    border: 1px solid grey;
+  }
+}
+
+.button-block-in-login-form {
+  display: flex;
+  justify-content: space-between;
+  button {
+    margin: 5px 5px 0 5px;
+  }
+}
+
+.login-password-error {
+  color: red;
+}
