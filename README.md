@@ -1,3 +1,20 @@
+# Пользователи:
+
+Admin, пароль 000, права администратора
+
+Alex, пароль 123, права пользователя
+
+Mary, пароль 123, права пользователя
+
+# Функционал:
+
+Пользователи могут создавать новости, но они не видны Гостю(незалогиненному пользователю) или другим пользователям. Админ может утвердить или удалить новость пользователя. Утверждённые новости видит Гость. 
+
+В данном коде проэмулированы обращения в базу данных. 
+
+Используемые библиотеки:
+Redux, @reduxjs/toolkit, React-redux, React-router, React-modal, Formik, Yup, SCSS.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
